@@ -17,7 +17,7 @@ To enable this capability, we rely on the **Java Debug Interface (JDI)** to obse
 By integrating this dynamic runtime data into Moose's metamodeling infrastructure, we unlock a new class of analyses. From profiling to debugging and security, the ability to work with live execution data enriches possible analyses.
 
 
-# How are Java call stack represented ?
+# How are Java call stack represented?
 
 <img src="img/posts/2025-08-12-a-Famix-metamodel-for-Java-callstack/FamixCallstackModel.png" alt="Process overview" width="800">
 
@@ -60,7 +60,7 @@ Here’s a summary of the complete process, broken down into clear steps:
 > The final grayed-out step (Moose-Security analysis) is just one example of how this metamodel can be applied.
 
 
-## How to extract a java call stack ?
+## How to extract a java call stack?
 
 To get started, clone [JavaCallStackExtractor](https://github.com/moosetechnology/JavaCallStackExtractor), the current tool for generating Moose-compatible call stack files.  
 Refer to its README for up-to-date usage instructions and detailed guidance—it is your main reference.  
@@ -89,7 +89,7 @@ Upon execution, a call stack trace file (default: JDIOutput.cs) will be created 
 <img src="./img/posts/2025-08-12-a-Famix-metamodel-for-Java-callstack/process_third.png" alt="Process third step" width="800">  
 
 
-## How to import this call stack in Moose ?
+## How to import this call stack in Moose?
 
 Open a Moose image, then import the  [FamixCallStack](https://github.com/moosetechnology/FamixCallStack) project:
 - Either by using Metacello (as explained in its README)
