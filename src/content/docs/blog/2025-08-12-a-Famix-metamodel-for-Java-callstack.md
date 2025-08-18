@@ -108,9 +108,8 @@ Just drag the file "JDIOutput.cs" and drop it on your Moose image (here the exte
 <img src="img/posts/2025-08-12-a-Famix-metamodel-for-Java-callstack/process_fourth.png" alt="Process of the importation fourth step" width="800">  
 
 ## What are the possible uses to this metamodel?
-One of the possible uses, is as already said, the use for security analysis.
-The [Moose-Security](https://github.com/moosetechnology/Moose-Security) project provides APIs to detect security vulnerabilities in Java code. It as a goal to **automatically detect security flows in java applications**.
+One of the possible uses, is as already said, the use for security analysis in [Moose-Security](https://github.com/moosetechnology/Moose-Security). 
 
-To achieve this, we aim to identify recurring **attack patterns**, that are common characteristics of observed on attacks call stacks. These patterns could help flag suspicious behavior in other applications.  
+To achieve the goal of **automatically detect security flows in java applications**, we aim to identify recurring **attack patterns**, that are common characteristics of observed on attacks call stacks. These patterns could help flag suspicious behavior in other applications.  
 However, defining such patterns is difficult: attacks often depend on complex and variable runtime data. That’s where the call stack metamodel becomes invaluable. By analyzing a sample of call stacks from known attack scenarios, we can uncover **reproducible structures** or **behaviors** that might otherwise remain hidden in static models.  
 These patterns could then be formalized and used to detect similar vulnerabilities automatically.
